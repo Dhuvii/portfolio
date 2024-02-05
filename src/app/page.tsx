@@ -31,12 +31,12 @@ export default function Home() {
         </h1>
 
         <p className="mt-8 max-w-3xl text-center text-sm/6 tracking-wide text-gray-400 md:text-base/6">
-          I'm passionate about crafting digital wonders and{" "}
+          I&apos;m passionate about crafting digital wonders and{" "}
           <span className="text-pink-400">solving problems </span> with lines of
           code. <br />
           Expertise in{" "}
-          <span className="text-sky-400">Full Stack applications</span>, let's
-          connect and build something extraordinary together
+          <span className="text-sky-400">Full Stack applications</span>,
+          let&apos;s connect and build something extraordinary together
         </p>
 
         <div className="mx-auto mt-10 flex flex-col items-center justify-center divide-gray-700 md:flex-row md:divide-x">

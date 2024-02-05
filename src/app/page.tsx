@@ -25,9 +25,22 @@ export default function Home() {
         </div>
         {/* background effects */}
 
-        <h1 className="max-w-screen-lg text-center text-4xl font-bold text-white md:text-6xl">
-          <br />
-          Thuvaragan Parameshwaran <br /> your friendly Web Wizard
+        <h1 className="relative max-w-screen-lg text-center text-4xl font-bold text-white md:text-6xl">
+          <span className="">
+            Thuvaragan Parameshwaran <br /> your{" "}
+            <span className="relative">
+              <span className="relative z-20 text-blue-500">friendly Web</span>
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 418 42"
+                className="absolute bottom-0 right-0 z-10 h-[0.58em] w-full fill-blue-500/60 md:-mb-3"
+                preserveAspectRatio="none"
+              >
+                <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"></path>
+              </svg>
+            </span>{" "}
+            Wizard
+          </span>
         </h1>
 
         <p className="mt-8 max-w-3xl text-center text-sm/6 tracking-wide text-gray-400 md:text-base/6">
@@ -122,16 +135,46 @@ export default function Home() {
 
       {/* projects */}
       <section className="mx-auto min-h-[100dvh] w-full max-w-screen-xl px-5">
+        <div className="mb-32">
+          <h2 className="text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+            “Best practices” don’t actually work.
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-3xl text-center text-base text-gray-400 sm:text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            vero similique eligendi adipisci illo molestiae optio modi sequi
+            quasi quam ullam velit iure autem, voluptate rem explicabo tenetur
+            alias maiores.
+          </p>
+        </div>
+
         <div className="flex w-full flex-col items-start justify-between gap-10 md:flex-row">
           {/* image */}
           <div className="relative w-full md:w-[60%]">
             <div className="relative z-30 w-full">
-              <div className="w-[90%] overflow-hidden rounded-xl border border-gray-700 bg-white/10 md:[transform:perspective(40cm)rotateY(30deg)]">
+              <div className="relative w-[90%] overflow-hidden rounded-xl border border-gray-700 bg-white/10 md:[transform:perspective(40cm)rotateY(30deg)]">
+                {/* gradient line */}
+                <div className="absolute inset-x-0 top-0 -mt-[1.9rem] flex h-8 w-full items-end overflow-hidden">
+                  <div className="-mb-px flex h-[3px] w-full -scale-x-100">
+                    <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                    <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                  </div>
+                </div>
+
+                <div className="absolute inset-x-0 bottom-0 z-40 -mb-px flex h-8 w-full items-end overflow-hidden">
+                  <div className="-mb-px flex h-[3px] w-full -scale-x-100">
+                    <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                    <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                  </div>
+                </div>
+                {/* gradient line */}
+
                 <div className="flex h-8 w-full items-center justify-start gap-2 p-3">
                   <div className="aspect-square w-3 rounded-full bg-white/20"></div>
                   <div className="aspect-square w-3 rounded-full bg-white/20"></div>
                   <div className="aspect-square w-3 rounded-full bg-white/20"></div>
                 </div>
+
                 <div className="relative inset-x-0 z-30 aspect-video w-full max-w-screen-md">
                   <Image
                     fill
@@ -145,6 +188,14 @@ export default function Home() {
 
               <div className="absolute bottom-0 right-0 z-30 -mb-10 flex h-full w-[40%] items-end md:-mr-10">
                 <div className="relative inset-x-0 z-20 aspect-video w-full max-w-screen-md">
+                  {/* gradient line top */}
+                  <div className="absolute inset-x-0 top-0 -mt-[1.9rem] flex h-8 w-full items-end overflow-hidden">
+                    <div className="-mb-px flex h-[3px] w-full -scale-x-100">
+                      <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                      <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                    </div>
+                  </div>
+                  {/* gradient line top */}
                   <Image
                     fill
                     src={kifgo2}
@@ -152,6 +203,15 @@ export default function Home() {
                     className="object-fit h-full w-full rounded-md shadow-xl"
                     alt="Screenshot of the landing page of motionridge.com"
                   />
+
+                  {/* gradient line bottom */}
+                  <div className="absolute inset-x-0 bottom-0 -mb-[2.05rem] flex h-8 w-full rotate-180 items-end overflow-hidden">
+                    <div className="-mb-px flex h-[3px] w-full -scale-x-100">
+                      <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                      <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                    </div>
+                  </div>
+                  {/* gradient line bottom */}
                 </div>
               </div>
             </div>
@@ -716,6 +776,22 @@ export default function Home() {
           <div className="relative w-full md:w-[60%]">
             <div className="relative z-30 flex w-full justify-end">
               <div className="w-[90%] overflow-hidden rounded-xl border border-gray-700 bg-white/10 md:[transform:perspective(40cm)rotateY(-30deg)]">
+                {/* gradient line */}
+                <div className="absolute inset-x-0 top-0 -mt-[1.9rem] flex h-8 w-full items-end overflow-hidden">
+                  <div className="-mb-px flex h-[3px] w-full -scale-x-100">
+                    <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                    <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                  </div>
+                </div>
+
+                <div className="absolute inset-x-0 bottom-0 z-40 -mb-px flex h-8 w-full items-end overflow-hidden">
+                  <div className="-mb-px flex h-[3px] w-full -scale-x-100">
+                    <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                    <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                  </div>
+                </div>
+                {/* gradient line */}
+
                 <div className="flex h-8 w-full items-center justify-start gap-2 p-3">
                   <div className="aspect-square w-3 rounded-full bg-white/20"></div>
                   <div className="aspect-square w-3 rounded-full bg-white/20"></div>
@@ -734,6 +810,15 @@ export default function Home() {
 
               <div className="absolute bottom-0 left-0 z-30 -mb-10 flex h-full w-[40%] items-end md:-mr-10">
                 <div className="relative inset-x-0 z-20 aspect-video w-full max-w-screen-md">
+                  {/* gradient line top */}
+                  <div className="absolute inset-x-0 top-0 -mt-[1.9rem] flex h-8 w-full items-end overflow-hidden">
+                    <div className="-mb-px flex h-[3px] w-full -scale-x-100">
+                      <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                      <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                    </div>
+                  </div>
+                  {/* gradient line top */}
+
                   <Image
                     fill
                     src={motionridge2}
@@ -741,6 +826,14 @@ export default function Home() {
                     className="object-fit h-full w-full rounded-md shadow-xl"
                     alt="Screenshot of the landing page of motionridge.com"
                   />
+                  {/* gradient line bottom */}
+                  <div className="absolute inset-x-0 bottom-0 -mb-[2.05rem] flex h-8 w-full rotate-180 items-end overflow-hidden">
+                    <div className="-mb-px flex h-[3px] w-full -scale-x-100">
+                      <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                      <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                    </div>
+                  </div>
+                  {/* gradient line bottom */}
                 </div>
               </div>
             </div>
@@ -757,6 +850,21 @@ export default function Home() {
           <div className="relative w-full md:w-[60%]">
             <div className="relative z-30 w-full">
               <div className="w-[90%] overflow-hidden rounded-xl border border-gray-700 bg-white/10 md:[transform:perspective(40cm)rotateY(30deg)]">
+                {/* gradient line */}
+                <div className="absolute inset-x-0 top-0 -mt-[1.9rem] flex h-8 w-full items-end overflow-hidden">
+                  <div className="-mb-px flex h-[3px] w-full -scale-x-100">
+                    <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                    <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                  </div>
+                </div>
+                <div className="absolute inset-x-0 bottom-0 z-40 -mb-px flex h-8 w-full items-end overflow-hidden">
+                  <div className="-mb-px flex h-[3px] w-full -scale-x-100">
+                    <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                    <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                  </div>
+                </div>
+                {/* gradient line */}
+
                 <div className="flex h-8 w-full items-center justify-start gap-2 p-3">
                   <div className="aspect-square w-3 rounded-full bg-white/20"></div>
                   <div className="aspect-square w-3 rounded-full bg-white/20"></div>
@@ -775,6 +883,14 @@ export default function Home() {
 
               <div className="absolute bottom-0 right-0 z-30 -mb-10 flex h-full w-[40%] items-end md:-mr-10">
                 <div className="relative inset-x-0 z-20 aspect-video w-full max-w-screen-md">
+                  {/* gradient line top */}
+                  <div className="absolute inset-x-0 top-0 -mt-[1.9rem] flex h-8 w-full items-end overflow-hidden">
+                    <div className="-mb-px flex h-[3px] w-full -scale-x-100">
+                      <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                      <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                    </div>
+                  </div>
+                  {/* gradient line top */}
                   <Image
                     fill
                     src={layerplots2}
@@ -782,6 +898,14 @@ export default function Home() {
                     className="object-fit h-full w-full rounded-md shadow-xl"
                     alt="Screenshot of the landing page of motionridge.com"
                   />
+                  {/* gradient line bottom */}
+                  <div className="absolute inset-x-0 bottom-0 -mb-[2.05rem] flex h-8 w-full rotate-180 items-end overflow-hidden">
+                    <div className="-mb-px flex h-[3px] w-full -scale-x-100">
+                      <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                      <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
+                    </div>
+                  </div>
+                  {/* gradient line bottom */}
                 </div>
               </div>
             </div>

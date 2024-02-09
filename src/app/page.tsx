@@ -19,8 +19,8 @@ export default function Home() {
 
         <div className="pointer-events-none absolute inset-0 -ml-32 mt-52 flex items-center justify-center">
           <div className="flex rotate-45 items-center justify-center">
-            <div className="h-40 w-96 rounded-full bg-blue-500 opacity-25 blur-[100px]"></div>
-            <div className="h-96 w-[32rem] rounded-full bg-pink-500 opacity-25 blur-[150px]"></div>
+            <div className="h-40 w-32 rounded-full bg-blue-500 opacity-25 blur-[100px] md:w-96"></div>
+            <div className="h-64 w-52 rounded-full bg-pink-500 opacity-25 blur-[150px] md:w-[32rem]"></div>
           </div>
         </div>
         {/* background effects */}
@@ -2233,7 +2233,7 @@ export default function Home() {
       {/* other projects */}
 
       {/* testimonial */}
-      <section className="relative w-full pb-32">
+      <section className="relative w-full overflow-hidden pb-32">
         <div className="flex w-full flex-col items-center justify-center px-5 pb-32">
           <h2 className="text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             “Best practices” don’t actually work.

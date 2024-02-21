@@ -135,19 +135,6 @@ export default function Home() {
 
       {/* projects */}
       <section className="mx-auto min-h-[100dvh] w-full max-w-screen-xl px-5">
-        <div className="mb-32">
-          <h2 className="text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-            “Best practices” don’t actually work.
-          </h2>
-
-          <p className="mx-auto mt-6 max-w-3xl text-center text-base text-gray-400 sm:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            vero similique eligendi adipisci illo molestiae optio modi sequi
-            quasi quam ullam velit iure autem, voluptate rem explicabo tenetur
-            alias maiores.
-          </p>
-        </div>
-
         <div className="flex w-full flex-col items-start justify-between gap-10 md:flex-row">
           {/* image */}
           <div className="relative w-full md:w-[60%]">
@@ -1195,7 +1182,7 @@ export default function Home() {
       {/* projects */}
 
       {/* other projects */}
-      <section className="relative -mt-20 min-h-[100dvh] pb-72 md:-mt-44">
+      <section className="relative -mt-20 min-h-[100dvh] pb-64 md:-mt-44">
         <div className="pointer-events-none absolute inset-0 flex justify-center">
           <div className="mx-2 w-full border-x border-white/5 md:hidden"></div>
           <div className="hidden h-full w-full max-w-7xl grid-cols-[1fr_448px_1fr] gap-3.5 px-2 md:grid lg:grid-cols-3 lg:px-4">
@@ -2193,41 +2180,15 @@ export default function Home() {
       {/* testimonial */}
       <section className="relative w-full overflow-hidden pb-32">
         <div className="flex w-full flex-col items-center justify-center px-5 pb-32">
-          <h2 className="text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-            “Best practices” don’t actually work.
+          <h2 className="max-w-2xl text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+            Get to know what my Mentors and Collegues say about me.
           </h2>
 
-          <figure>
-            <blockquote>
-              <p className="mx-auto mt-6 max-w-3xl text-center text-base text-gray-400 sm:text-lg">
-                I’ve written{" "}
-                <a
-                  href="https://adamwathan.me/css-utility-classes-and-separation-of-concerns/"
-                  className="font-semibold text-sky-500 dark:text-sky-400"
-                >
-                  a few thousand words
-                </a>{" "}
-                on why traditional “semantic class names” are the reason CSS is
-                hard to maintain, but the truth is you’re never going to believe
-                me until you actually try it. If you can suppress the urge to
-                retch long enough to give it a chance, I really think you’ll
-                wonder how you ever worked with CSS any other way.
-              </p>
-            </blockquote>
-            <figcaption className="mt-6 flex items-center justify-center space-x-4 text-left">
-              <TestimonialProfilePic
-                src="https://images.unsplash.com/photo-1552234994-66ba234fd567?q=80&w=2787&auto=format&fit=facearea&facepad=3&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                fallback="HP"
-                className="aspect-square w-16 border border-gray-700"
-              />
-              <div>
-                <div className="font-semibol text-white">Niel johnson</div>
-                <div className="mt-0.5 text-sm leading-6 text-gray-400">
-                  High position
-                </div>
-              </div>
-            </figcaption>
-          </figure>
+          <p className="mx-auto mt-6 max-w-xl text-center text-base text-gray-400 sm:text-lg">
+            Candid Reflections from Mentors and Colleagues{" "}
+            <span className="font-semibold text-sky-500">Illuminate</span> My
+            Professional Impact and Character.
+          </p>
         </div>
 
         <div className="relative z-20 mx-auto grid w-full max-w-screen-xl grid-cols-1 gap-6 px-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
@@ -2500,6 +2461,55 @@ export default function Home() {
         {/* background effects */}
       </section>
       {/* testimonial */}
+
+      {/* about me */}
+      <section className="relative px-5 pb-32 lg:px-0">
+        <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center justify-start">
+          <h2 className="max-w-2xl text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+            About me
+          </h2>
+
+          <figure>
+            <blockquote>
+              <p className="mx-auto mt-6 max-w-4xl text-center text-base/7 text-gray-400 sm:text-lg/8">
+                I thrive on the thrill of collaborating with design teams,
+                ensuring every pixel finds its happy place! My daily adventure
+                involves weaving the magic of modern frontend technologies,
+                turning{" "}
+                <span className="font-semibold text-pink-500">
+                  creative visions
+                </span>{" "}
+                into interactive realities. From frontend feats to backend
+                wizardry, I&apos;m your go-to maestro for orchestrating the
+                symphony between design and functionality. Join me in the{" "}
+                <span className="font-semibold text-sky-500">
+                  UI wonderland
+                </span>
+                , where every line of code adds a dash of fun to bring those
+                vibrant designs to life – just as the designers dreamed them to
+                be!
+              </p>
+            </blockquote>
+            <figcaption className="mt-6 flex items-center justify-center space-x-4 text-left">
+              <TestimonialProfilePic
+                src={"./me.jpeg"}
+                fallback="PT"
+                className="aspect-square w-16 border border-gray-700"
+                wrapperClass="size-16"
+              />
+              <div>
+                <div className="font-semibol text-white">
+                  Parameshwaran Thuvaragan
+                </div>
+                <div className="mt-0.5 text-sm leading-6 text-gray-400">
+                  Full-stack developer
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      {/* about me */}
     </main>
   );
 }

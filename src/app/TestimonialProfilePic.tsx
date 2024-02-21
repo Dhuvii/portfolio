@@ -1,9 +1,11 @@
 "use client";
 import { Avatar, IAvatar } from "@/components/Avatar";
+import { cn } from "@/utilities/cn";
 import React, { ComponentProps } from "react";
 
 interface ITestimonialProfilePic extends ComponentProps<"img"> {
   fallback: string;
+  wrapperClass?: string;
 }
 
 const TestimonialProfilePic = ({
@@ -11,18 +13,30 @@ const TestimonialProfilePic = ({
   alt,
   fallback,
   className,
+  wrapperClass,
 }: ITestimonialProfilePic) => {
   return (
-    <Avatar
-      className={className}
-      src={src}
-      Fallback={() => (
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-base font-medium text-gray-600">
-          {fallback}
-        </div>
-      )}
-      alt={alt || "image"}
-    />
+    <div className={cn("relative size-16", wrapperClass)}>
+      <div className="relative z-20">
+        <Avatar
+          className={className}
+          src={src}
+          Fallback={() => (
+            <div
+              className={cn(
+                "flex size-16 items-center justify-center rounded-full bg-gray-100 text-base font-medium text-gray-600",
+                wrapperClass,
+              )}
+            >
+              {fallback}
+            </div>
+          )}
+          alt={alt || "image"}
+        />
+      </div>
+
+      <div className="absolute inset-0 z-10 animate-pulse rounded-full bg-gray-600"></div>
+    </div>
   );
 };
 

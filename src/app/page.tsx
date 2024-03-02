@@ -254,10 +254,10 @@ export default function Home() {
             </p>
 
             <p className="mt-5 text-sm/6 text-gray-400">
-              Explore this project to see how I've blended technology seamlessly
-              with the beauty of Sri Lankan craftsmanship. It's a simple and
-              user-friendly platform that celebrates tradition in the digital
-              world.
+              Explore this project to see how I&apos;ve blended technology
+              seamlessly with the beauty of Sri Lankan craftsmanship. It&apos;s
+              a simple and user-friendly platform that celebrates tradition in
+              the digital world.
             </p>
 
             <div className="mt-5 w-full">

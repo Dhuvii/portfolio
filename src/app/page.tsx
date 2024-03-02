@@ -25,7 +25,7 @@ export default function Home() {
         </div>
         {/* background effects */}
 
-        <h1 className="relative max-w-screen-lg text-center text-5xl font-bold text-white md:text-6xl">
+        <h1 className="relative max-w-screen-lg text-center text-4xl font-bold text-white sm:text-5xl md:text-6xl">
           <span className="">
             Thuvaragan Parameshwaran <br /> your{" "}
             <span className="relative">
@@ -2477,6 +2477,166 @@ export default function Home() {
         </div>
       </section>
       {/* about me */}
+
+      {/* Skills */}
+      <section className="relative mx-auto w-full max-w-screen-xl px-5 pb-32">
+        <ul className="grid grid-cols-1 gap-10 md:grid-cols-3 xl:grid-cols-4">
+          <li className="mt-5 rounded-xl p-3 hover:bg-white/5 md:max-w-xs">
+            <p className="text-sm font-medium text-white">
+              HTML, CSS, Type Script
+              <span className="ml-2 rounded-lg bg-green-100 px-2 py-0.5 text-[0.6rem] font-medium uppercase text-green-800">
+                advanced
+              </span>
+            </p>
+            <p className="mt-1 text-xs text-gray-400">
+              Ability to create responsive, accessible web applications.
+            </p>
+          </li>
+
+          <li className="mt-5 rounded-xl p-3 hover:bg-white/5 md:max-w-xs">
+            <p className="text-sm font-medium text-white">
+              User Interface Design
+              <span className="ml-2 rounded-lg bg-green-100 px-2 py-0.5 text-[0.6rem] font-medium uppercase text-green-800">
+                advanced
+              </span>
+            </p>
+            <p className="mt-1 text-xs text-gray-400">
+              Ability to create stunning, clean looking modern user interfaces,
+              using cutting edge tools and technologies.
+            </p>
+          </li>
+
+          <li className="mt-5 rounded-xl p-3 hover:bg-white/5 md:max-w-xs">
+            <p className="text-sm font-medium text-white">
+              React / Nextjs
+              <span className="ml-2 rounded-lg bg-green-100 px-2 py-0.5 text-[0.6rem] font-medium uppercase text-green-800">
+                advanced
+              </span>
+            </p>
+            <p className="mt-1 text-xs text-gray-400">
+              Very advanced knowledge in React, making highly accessible
+              components, using different component patterns.
+              <br />
+              <br />
+              Worked with many modern libraries.
+            </p>
+          </li>
+
+          <li className="mt-5 rounded-xl p-3 hover:bg-white/5 md:max-w-xs">
+            <p className="text-sm font-medium text-white">
+              Angular
+              <span className="ml-2 rounded-lg bg-blue-100 px-2 py-0.5 text-[0.6rem] font-medium uppercase text-blue-800">
+                intermediate
+              </span>
+            </p>
+            <p className="mt-1 text-xs text-gray-400">
+              Solid understanding in angular, constantly working on it to fine
+              tune the techniques and skills.
+            </p>
+          </li>
+
+          <li className="mt-5 rounded-xl p-3 hover:bg-white/5 md:max-w-xs">
+            <p className="text-sm font-medium text-white">
+              Node, Express / Fastify, NestJs
+              <span className="ml-2 rounded-lg bg-green-100 px-2 py-0.5 text-[0.6rem] font-medium uppercase text-green-800">
+                advanced
+              </span>
+            </p>
+            <p className="mt-1 text-xs text-gray-400">
+              Very advanced knowledge in backend frameworks and libraries, such
+              as NestJs.
+            </p>
+          </li>
+
+          <li className="mt-5 rounded-xl p-3 hover:bg-white/5 md:max-w-xs">
+            <p className="text-sm font-medium text-white">
+              Mongodb, Mysql, postgress
+              <span className="ml-2 rounded-lg bg-green-100 px-2 py-0.5 text-[0.6rem] font-medium uppercase text-green-800">
+                advanced
+              </span>
+            </p>
+            <p className="mt-1 text-xs text-gray-400">
+              Worked with both no-sql and sql databases.
+              <br />
+              <br />
+              Have used ORM's such as Prisma, TypeOrm
+            </p>
+          </li>
+
+          <li className="mt-5 rounded-xl p-3 hover:bg-white/5 md:max-w-xs">
+            <p className="text-sm font-medium text-white">
+              GraphQL
+              <span className="ml-2 rounded-lg bg-blue-100 px-2 py-0.5 text-[0.6rem] font-medium uppercase text-blue-800">
+                intermediate
+              </span>
+            </p>
+            <p className="mt-1 text-xs text-gray-400">
+              Have worked with a few GraphQL Apis.
+            </p>
+          </li>
+
+          <li className="mt-5 rounded-xl p-3 hover:bg-white/5 md:max-w-xs">
+            <p className="text-sm font-medium text-white">
+              Github, BitBucket, Jira
+              <span className="ml-2 rounded-lg bg-green-100 px-2 py-0.5 text-[0.6rem] font-medium uppercase text-green-800">
+                advanced
+              </span>
+            </p>
+            <p className="mt-1 text-xs text-gray-400">
+              Worked with versioning and project management tools.
+              <br />
+              <br />
+              Ability to work with a large team.
+            </p>
+          </li>
+        </ul>
+
+        {/* background effects */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-full w-full [mask-image:linear-gradient(180deg,transparent,black,transparent,transparent)]">
+          <div className="pattern -ml-2 -mt-1 h-full w-full opacity-80"></div>
+        </div>
+
+        <div className="pointer-events-none absolute inset-0 mt-10 flex items-center justify-center">
+          <div className="flex -rotate-45 items-center justify-center">
+            <div className="h-40 w-96 rounded-full bg-blue-500 opacity-15 blur-[100px]"></div>
+            <div className="h-96 w-[12rem] rounded-full bg-pink-500 opacity-15 blur-[150px]"></div>
+          </div>
+        </div>
+        {/* background effects */}
+      </section>
+      {/* Skills */}
+
+      {/* contact */}
+      <section className="relative mt-32 w-full overflow-visible pb-32 ">
+        <div className="flex w-full flex-col items-center justify-center px-5 pb-32">
+          <h2 className="max-w-2xl text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+            Contact me, Don&apos;t be shy!
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-lg text-center text-base text-gray-400 sm:text-lg">
+            If you have a{" "}
+            <span className="font-semibold text-pink-500">project in mind</span>{" "}
+            or would like to make an enquiry, or just to{" "}
+            <span className="font-semibold text-sky-500">say hi</span>
+          </p>
+        </div>
+
+        <div className=""></div>
+
+        {/* background effects */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-full w-full [mask-image:linear-gradient(0deg,transparent,black,transparent,transparent)]">
+          <div className="pattern -ml-2 -mt-1 h-full w-full opacity-80"></div>
+        </div>
+
+        <div className="pointer-events-none absolute inset-0 mt-10 flex items-center justify-center">
+          <div className="flex -rotate-45 items-center justify-center">
+            <div className="h-40 w-96 rounded-full bg-blue-500 opacity-15 blur-[100px]"></div>
+            <div className="h-96 w-[32rem] rounded-full bg-pink-500 opacity-15 blur-[150px]"></div>
+          </div>
+        </div>
+        {/* background effects */}
+      </section>
+      {/* contact */}
     </main>
   );
 }

@@ -6,6 +6,9 @@ import layerplots from "../../public/layerplots.png";
 import motionridge2 from "../../public/motionridge-2.png";
 import motionridge from "../../public/motionridge.png";
 import TestimonialProfilePic from "./TestimonialProfilePic";
+import Input from "@/components/Input";
+import TextArea from "@/components/TextArea";
+import { Button } from "@/components/Button";
 
 export default function Home() {
   return (
@@ -2608,7 +2611,7 @@ export default function Home() {
 
       {/* contact */}
       <section className="relative mt-32 w-full overflow-visible pb-32 ">
-        <div className="flex w-full flex-col items-center justify-center px-5 pb-32">
+        <div className="flex w-full flex-col items-center justify-center px-5 pb-20">
           <h2 className="max-w-2xl text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             Contact me, Don&apos;t be shy!
           </h2>
@@ -2621,7 +2624,46 @@ export default function Home() {
           </p>
         </div>
 
-        <div className=""></div>
+        <div className="mx-auto max-w-2xl ">
+          <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2">
+            <Input
+              inputClass="mt-1"
+              label="First Name"
+              placeholder="Enter your first Name"
+            />
+
+            <Input
+              inputClass="mt-1"
+              label="Last Name"
+              placeholder="Enter your last Name"
+            />
+          </div>
+
+          <div className="mt-10 w-full">
+            <Input
+              inputClass="mt-1"
+              label="Email"
+              placeholder="Enter your email"
+              type="email"
+            />
+          </div>
+
+          <div className="mt-10 w-full">
+            <TextArea
+              rows={5}
+              label="Message"
+              placeholder="Enter your message."
+            />
+          </div>
+
+          <Button
+            variant={"unstyled"}
+            className="bg-gradient-to-br from-blue-600 to-pink-600 text-white"
+            wrapperClass="w-max mt-10 mx-auto"
+          >
+            Send Message
+          </Button>
+        </div>
 
         {/* background effects */}
         <div className="pointer-events-none absolute inset-x-0 top-0 h-full w-full [mask-image:linear-gradient(0deg,transparent,black,transparent,transparent)]">

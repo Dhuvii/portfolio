@@ -62,6 +62,7 @@ export default function Home() {
             </p>
             <div className="mt-2 flex items-center justify-center gap-10">
               <a
+                target="_blank"
                 href="https://github.com/Dhuvii"
                 className="flex items-center justify-start gap-2 text-sm text-gray-200 hover:text-gray-100 hover:underline"
               >
@@ -81,6 +82,7 @@ export default function Home() {
               </a>
 
               <a
+                target="_blank"
                 href="https://www.linkedin.com/in/thuvaragan-parameshwaran-5467281a1/"
                 className="flex items-center justify-start gap-2 text-sm text-gray-200 hover:text-gray-100 hover:underline"
               >
@@ -862,7 +864,7 @@ export default function Home() {
               </h3>
               <a
                 target="_blank"
-                href="https://nextjs.org/"
+                href="https://layerplots.com"
                 className="flex items-center justify-start gap-2 text-xs text-gray-200 hover:underline"
               >
                 <svg

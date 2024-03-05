@@ -2559,7 +2559,7 @@ export default function Home() {
               Worked with both no-sql and sql databases.
               <br />
               <br />
-              Have used ORM's such as Prisma, TypeOrm
+              Have used ORM&apos;s such as Prisma, TypeOrm
             </p>
           </li>
 

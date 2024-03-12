@@ -2150,7 +2150,7 @@ export default function Home() {
       {/* other projects */}
 
       {/* testimonial */}
-      <section className="relative mt-32 w-full overflow-hidden pb-32 md:mt-72">
+      <section className="relative mt-32 hidden w-full overflow-hidden pb-32 md:mt-72">
         <div className="flex w-full flex-col items-center justify-center px-5 pb-32">
           <h2 className="max-w-2xl text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             Get to know what my Mentors and Collegues say about me.
@@ -2435,7 +2435,7 @@ export default function Home() {
       {/* testimonial */}
 
       {/* about me */}
-      <section className="relative px-5 pb-32 lg:px-0">
+      <section className="relative mt-32 px-5 pb-32 md:mt-72 lg:px-0">
         <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center justify-start">
           <h2 className="max-w-2xl text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             About me

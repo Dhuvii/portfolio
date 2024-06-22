@@ -5,6 +5,7 @@ import layerplots2 from "../../public/layerplots-2.png";
 import layerplots from "../../public/layerplots.png";
 import motionridge2 from "../../public/motionridge-2.png";
 import motionridge from "../../public/motionridge.png";
+
 import TestimonialProfilePic from "./TestimonialProfilePic";
 import Input from "@/components/Input";
 import TextArea from "@/components/TextArea";
